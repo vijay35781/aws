@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  build:
+	commands:
+	  - echo Entered the Build phase......
+	  - mvn clean package
+  post_build:
+	command:
+	  - echp Build completed successfully
+artifacts:
+  files:
+    - target/chitt-service.jar
+  discard-paths: yes 
