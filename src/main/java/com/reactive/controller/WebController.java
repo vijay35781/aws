@@ -23,7 +23,7 @@ public class WebController {
 	UserDao userDao;
 	
 	
-	@CrossOrigin(origins = "http://localhost:3000")
+	//@CrossOrigin(origins = "http://localhost:3000")
 	@GetMapping("/getNames")
 	public Mono<?> getUserNames(){
 		
@@ -32,7 +32,7 @@ public class WebController {
 		
 	}
 	
-	@CrossOrigin(origins = "http://localhost:3000")
+	//@CrossOrigin(origins = "http://localhost:3000")
 	@GetMapping("/get")
 	public Mono<?> getDetails(){
 		User user=new User();
